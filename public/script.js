@@ -7,6 +7,18 @@ const userInput = document.getElementById("userInput");
 
 let conversation = [];
 
+// Character to image filename mapping
+const characterImageMap = {
+  "Marie Curie": "marie-curie.jpg",
+  "Cleopatra": "cleopatra.jpg",
+  "Swami Vivekananda": "swami-vivekananda.jpg",
+  "Mahatma Gandhi": "mahatma-gandhi.jpg",
+  "Anne Frank": "anne-frank.jpg",
+  "Chanakya": "chanakya.jpg",
+  "Stephen Hawking": "stephen-hawking.jpg",
+  "Leonardo da Vinci": "leonardo-da-vinci.jpg",
+};
+
 chatForm.addEventListener("submit", async (e) => {
   e.preventDefault();
   const input = document.getElementById("userInput");
@@ -59,7 +71,10 @@ function appendMessage(sender, text) {
   msg.classList.add("message");
 
   const isUser = sender === "You";
-  const imgSrc = isUser ? "images/user.png" : `images/${character.toLowerCase().replace(/ /g, "-")}.jpg`;
+  // Use mapping for bot images
+  const imgSrc = isUser
+    ? "images/user.png"
+    : `images/${characterImageMap[character] || "cleopatra.jpg"}`;
 
   msg.innerHTML = `
     <div style="display: flex; align-items: flex-start; margin: 10px; ${isUser ? 'justify-content: flex-end;' : ''}">
