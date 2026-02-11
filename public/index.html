@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Time Traveller</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body class="text-gray-800">
+  <header class="bg-gradient-to-r from-yellow-300 to-pink-200 text-gray-900 py-8 shadow-md">
+    <h1 class="text-5xl font-bold text-center tracking-tight">🕰️ AI Time Traveller</h1>
+    <p class="text-lg text-center mt-2 italic">Step back in time and speak with the greatest minds in history.</p>
+  </header>
+
+  <main class="py-12 px-6">
+    <section id="characters" class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+
+      <!-- Character Cards -->
+      <div class="character-card bg-white rounded-2xl shadow-xl cursor-pointer" data-character="Marie Curie">
+        <div class="w-56 h-56 mx-auto mt-6 rounded-full overflow-hidden border-4 border-yellow-200">
+          <img src="images/marie-curie.jpg" alt="Marie Curie" class="w-full h-full object-cover object-center" />
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-semibold mb-2">Marie Curie</h3>
+          <p class="text-gray-600 text-sm">Pioneer in radioactivity and first woman to win a Nobel Prize.</p>
+        </div>
+      </div>
+
+      <div class="character-card bg-white rounded-2xl shadow-xl cursor-pointer" data-character="Cleopatra">
+        <div class="w-56 h-56 mx-auto mt-6 rounded-full overflow-hidden border-4 border-yellow-200">
+          <img src="images/cleopatra.jpg" alt="Cleopatra" class="w-full h-full object-cover object-center" />
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-semibold mb-2">Cleopatra</h3>
+          <p class="text-gray-600 text-sm">Queen of Egypt, known for her intelligence and diplomacy.</p>
+        </div>
+      </div>
+
+      <div class="character-card bg-white rounded-2xl shadow-xl cursor-pointer" data-character="Swami Vivekananda">
+        <div class="w-56 h-56 mx-auto mt-6 rounded-full overflow-hidden border-4 border-yellow-200">
+          <img src="images/swami-vivekananda.jpg" alt="Swami Vivekananda" class="w-full h-full object-cover object-center" />
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-semibold mb-2">Swami Vivekananda</h3>
+          <p class="text-gray-600 text-sm">Spiritual leader and philosopher who introduced Yoga to the West.</p>
+        </div>
+      </div>
+
+      <div class="character-card bg-white rounded-2xl shadow-xl cursor-pointer" data-character="Mahatma Gandhi">
+        <div class="w-56 h-56 mx-auto mt-6 rounded-full overflow-hidden border-4 border-yellow-200">
+          <img src="images/mahatma-gandhi.jpg" alt="Mahatma Gandhi" class="w-full h-full object-cover object-center" />
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-semibold mb-2">Mahatma Gandhi</h3>
+          <p class="text-gray-600 text-sm">Leader of India’s independence through nonviolence.</p>
+        </div>
+      </div>
+
+      <div class="character-card bg-white rounded-2xl shadow-xl cursor-pointer" data-character="Anne Frank">
+        <div class="w-56 h-56 mx-auto mt-6 rounded-full overflow-hidden border-4 border-yellow-200">
+          <img src="images/anne-frank.jpg" alt="Anne Frank" class="w-full h-full object-cover object-center" />
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-semibold mb-2">Anne Frank</h3>
+          <p class="text-gray-600 text-sm">Jewish diarist and symbol of hope during the Holocaust.</p>
+        </div>
+      </div>
+
+      <div class="character-card bg-white rounded-2xl shadow-xl cursor-pointer" data-character="Chanakya">
+        <div class="w-56 h-56 mx-auto mt-6 rounded-full overflow-hidden border-4 border-yellow-200">
+          <img src="images/chanakya.jpg" alt="Chanakya" class="w-full h-full object-cover object-center" />
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-semibold mb-2">Chanakya</h3>
+          <p class="text-gray-600 text-sm">Ancient Indian philosopher and strategist.</p>
+        </div>
+      </div>
+
+      <div class="character-card bg-white rounded-2xl shadow-xl cursor-pointer" data-character="Stephen Hawking">
+        <div class="w-56 h-56 mx-auto mt-6 rounded-full overflow-hidden border-4 border-yellow-200">
+          <img src="images/stephen-hawking.jpg" alt="Stephen Hawking" class="w-full h-full object-cover object-center" />
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-semibold mb-2">Stephen Hawking</h3>
+          <p class="text-gray-600 text-sm">Renowned physicist known for work on black holes.</p>
+        </div>
+      </div>
+
+      <div class="character-card bg-white rounded-2xl shadow-xl cursor-pointer" data-character="Leonardo da Vinci">
+        <div class="w-56 h-56 mx-auto mt-6 rounded-full overflow-hidden border-4 border-yellow-200">
+          <img src="images/leonardo-da-vinci.jpg" alt="Leonardo da Vinci" class="w-full h-full object-cover object-center" />
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-semibold mb-2">Leonardo da Vinci</h3>
+          <p class="text-gray-600 text-sm">Renaissance polymath known for his art, inventions, and scientific discoveries.</p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="text-center text-gray-500 text-sm py-6">
+    &copy; 2025 AI Time Traveller. All rights reserved.
+  </footer>
+
+  <script>
+    document.querySelectorAll(".character-card").forEach(card => {
+      card.addEventListener("click", () => {
+        const selected = card.getAttribute("data-character");
+        localStorage.setItem("selectedCharacter", selected);
+        window.location.href = "chat.html";
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

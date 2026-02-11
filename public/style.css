@@ -1,0 +1,44 @@
+body {
+  background: linear-gradient(to bottom, #fef3c7, #fde68a); 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1, h2 {
+  font-family: 'Georgia', serif;
+}
+#chatBox {
+  scroll-behavior: smooth;
+}
+.message {
+  font-size: 0.9rem;
+}
+
+.bubble {
+  padding: 10px 14px;
+  border-radius: 16px;
+  max-width: 75%;
+  word-wrap: break-word;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.bot {
+  background-color: #fef3c7; 
+  color: #000;
+}
+
+.user {
+  background-color: #fde68a; 
+  color: #000;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.typing {
+  font-style: italic;
+  color: #888;
+  margin-left: 10px;
+}
+
+
