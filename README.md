@@ -5,9 +5,23 @@ This web-based app lets you have intelligent conversations with 9 iconic histori
 
 ---
 
-## 🚀 Live Demo (Coming Soon)
+## 🚀 Demo
 
-> Hosted on: `localhost:3000` (for now)
+- **Live Demo:** [https://ai-time-traveller.onrender.com/]
+- **Local Demo:** Hosted on `localhost:3000` (after running backend)
+
+### 📸 Screenshots
+
+#### Homepage
+
+![Homepage Screenshot](public/images/homepage-demo.png)
+
+
+
+#### Chat with Historical Figure
+
+![Chat Screenshot](public/images/chat-demo.png)
+
 
 ---
 
@@ -15,7 +29,7 @@ This web-based app lets you have intelligent conversations with 9 iconic histori
 
 - 💬 Chat with famous figures like Gandhi, Marie Curie, Vivekananda, and Anne Frank.
 - 🧠 Character-specific responses using Google Gemini API.
-- ⚡ Powered by Gemini 1.5 Flash for fast, smart answers.
+- ⚡ Powered by Gemini 2.5 Flash for fast, smart answers.
 - 🎨 Clean frontend using HTML, CSS, and JavaScript.
 - 📦 Backend using Node.js + Express.js
 
@@ -32,6 +46,7 @@ AI-Time-Traveller/
 │   ├── chat.html
 │   ├── style.css
 │   ├── script.js
+│   ├── images/          # Demo screenshots and assets
 |── .env                # Your Gemini API key here
 ├── package.json
 └── README.md
@@ -43,7 +58,7 @@ AI-Time-Traveller/
 
 - **Frontend:** HTML, CSS, JavaScript, Tailwind CSS
 - **Backend:** Node.js, Express.js
-- **AI API:** Google Gemini (`@google/generative-ai`)
+- **AI API:** Google Gemini (`@google/genai`)
 - **Other Tools:** dotenv, cors, nodemon
 
 ---
@@ -68,7 +83,7 @@ AI-Time-Traveller/
 ### 1. Clone this repo
 
 ```bash
-git clone https://github.com/AyushJaiswal300404/AI-Time-Traveller
+git clone https://github.com/ayushcodes3004/Persona-Based-Conversational-AI-Application
 cd ai-time-traveller
 ```
 
@@ -99,7 +114,6 @@ Then open [http://localhost:3000](http://localhost:3000) in your browser.
 ## ⚠️ Troubleshooting
 
 - Make sure your API key is valid and free quota is available.
-- Switch to `gemini-1.5-flash` if `gemini-1.5-pro` hits limits.
 - `.env` must be in `/backend`, not root.
 - If `require` gives errors, remove `"type": "module"` from `package.json`.
 
@@ -119,4 +133,4 @@ MIT — Use it, build on it, remix it.
 
 ## ✍️ Created by
 
-**Ayush Jaiswal** — [LinkedIn](https://www.linkedin.com/in/ayushjaiswal300404)
+**Ayush Jaiswal** — [LinkedIn](https://www.linkedin.com/in/ayushcodes3004)
